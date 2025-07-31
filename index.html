@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskRelay – Get Things Done, Wherever You Aren’t</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TaskRelay</div>
+        <ul class="nav-links">
+            <li><a href="#post-task">Post a Task</a></li>
+            <li><a href="#browse-tasks">Browse Tasks</a></li>
+            <li><a href="#" id="loginBtn">Login</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Get Things Done, Wherever You Aren’t</h1>
+            <p>Post physical tasks in any city and let locals get it done for you.</p>
+            <a href="#post-task" class="cta-btn">Post a Task</a>
+        </div>
+    </header>
+    <section class="how-it-works" id="how-it-works">
+        <h2>How it works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon"><img src="images/step1.svg" alt="Step 1"></div>
+                <h3>Post Your Task</h3>
+                <p>Describe what you need done and where.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><img src="images/step2.svg" alt="Step 2"></div>
+                <h3>Connect with Locals</h3>
+                <p>Locals in the city see your task and offer to help.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><img src="images/step3.svg" alt="Step 3"></div>
+                <h3>Get It Done</h3>
+                <p>Pick a helper, track progress, and get updates.</p>
+            </div>
+        </div>
+    </section>
+    <section class="use-cases" id="browse-tasks">
+        <h2>Popular Use Cases</h2>
+        <div class="use-cards">
+            <div class="use-card">
+                <img src="images/document.svg" alt="Collect a document">
+                <h4>Collect a document</h4>
+            </div>
+            <div class="use-card">
+                <img src="images/appointment.svg" alt="Attend appointment">
+                <h4>Attend appointment</h4>
+            </div>
+            <div class="use-card">
+                <img src="images/delivery.svg" alt="Deliver a package">
+                <h4>Deliver a package</h4>
+            </div>
+            <div class="use-card">
+                <img src="images/photos.svg" alt="Take photos">
+                <h4>Take photos</h4>
+            </div>
+            <div class="use-card">
+                <img src="images/queue.svg" alt="Stand in queue">
+                <h4>Stand in queue</h4>
+            </div>
+        </div>
+    </section>
+    <section class="post-task-section" id="post-task">
+        <h2>Post a Task</h2>
+        <form class="task-form" id="taskForm" autocomplete="off">
+            <div class="form-group">
+                <label for="taskTitle">Task Title</label>
+                <input type="text" id="taskTitle" name="taskTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="taskCity">City</label>
+                <input type="text" id="taskCity" name="taskCity" required>
+            </div>
+            <div class="form-group">
+                <label for="taskDesc">Description</label>
+                <textarea id="taskDesc" name="taskDesc" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="cta-btn">Submit Task</button>
+        </form>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">TaskRelay</div>
+            <div class="footer-social">
+                <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="images/mail.svg" alt="Email"></a>
+            </div>
+            <div class="footer-contact">
+                <span>Contact: hello@taskrelay.com</span>
+            </div>
+        </div>
+    </footer>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Coming Soon</h2>
+            <p>Login functionality is coming soon. Stay tuned!</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
